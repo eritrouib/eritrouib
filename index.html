@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eriola Trungu Impersimi — Operational Researcher</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1F3864;
+      --blue: #185FA5;
+      --blue-light: #E6F1FB;
+      --blue-mid: #B5D4F4;
+      --blue-text: #0C447C;
+      --text: #1a1a1a;
+      --text-muted: #555;
+      --text-hint: #888;
+      --bg: #fff;
+      --bg-surface: #f6f6f4;
+      --border: rgba(0,0,0,0.1);
+      --radius: 8px;
+      --radius-lg: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --navy: #a8c4e8;
+        --blue: #85B7EB;
+        --blue-light: #0c2840;
+        --blue-mid: #184060;
+        --blue-text: #85B7EB;
+        --text: #e8e8e6;
+        --text-muted: #aaa;
+        --text-hint: #777;
+        --bg: #1a1a18;
+        --bg-surface: #222220;
+        --border: rgba(255,255,255,0.1);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 500;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .avatar { background: #1F3864; color: #a8c4e8; }
+    }
+
+    .header-text .name {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .header-text .tagline {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      border: 0.5px solid var(--border);
+      color: var(--text-muted);
+      background: var(--bg-surface);
+    }
+
+    .badge.accent {
+      background: var(--blue-light);
+      color: var(--blue-text);
+      border-color: var(--blue-mid);
+    }
+
+    /* Sections */
+    .section { margin-bottom: 2rem; }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-hint);
+      margin-bottom: 0.85rem;
+      padding-bottom: 6px;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    /* About */
+    .about-text {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+
+    .skill-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      border: 0.5px solid var(--border);
+    }
+
+    .skill-label {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--text-hint);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 5px;
+    }
+
+    .skill-items {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .project-card {
+      background: var(--bg);
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+    }
+
+    .project-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .project-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--blue);
+    }
+
+    .project-tag {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      background: var(--blue-light);
+      color: var(--blue-text);
+      border: 0.5px solid var(--blue-mid);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .project-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* Roles */
+    .role-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 10px 0;
+      border-bottom: 0.5px solid var(--border);
+      font-size: 14px;
+    }
+
+    .role-row:last-child { border-bottom: none; }
+
+    .role-title { font-weight: 500; }
+    .role-org { color: var(--text-muted); }
+    .role-date { font-size: 12px; color: var(--text-hint); white-space: nowrap; }
+
+    /* Contact */
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .contact-item:hover { color: var(--blue); }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 0.5px solid var(--border);
+      font-size: 12px;
+      color: var(--text-hint);
+    }
+
+    @media (max-width: 500px) {
+      .header { flex-direction: column; align-items: flex-start; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .role-row { flex-direction: column; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="header">
+      <div class="avatar">ETI</div>
+      <div class="header-text">
+        <div class="name">Eriola Trungu Impersimi</div>
+        <div class="tagline">Senior Operational Researcher · DHSC · GORS Member · Python · R · SQL · GIS</div>
+        <div class="badges">
+          <span class="badge accent">GORS</span>
+          <span class="badge accent">Civil Service</span>
+          <span class="badge">London, UK</span>
+          <span class="badge">Open to OR opportunities</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">About</div>
+      <p class="about-text">
+        I'm a Senior Operational Researcher with 10+ years' experience applying quantitative, geospatial and statistical methods to complex policy problems in government. Currently leading analytical QA and forecasting for the £15bn VPAG NHS medicines scheme at DHSC, and contributing to an AI data catalogue at the University of Manchester (NERC DSH). Passionate about reproducible analysis, communicating uncertainty clearly, and building analytical capability across teams.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical skills</div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-label">Analytical methods</div>
+          <div class="skill-items">Forecasting · regression · QA · sensitivity analysis · NLP · stock-and-flow</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Programming</div>
+          <div class="skill-items">Python · R · SQL · R Markdown</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Data & tools</div>
+          <div class="skill-items">RAP · GitHub · GitLab · TortoiseGit · Azure · Agile</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-label">Geospatial</div>
+          <div class="skill-items">ArcGIS · QGIS · geodatabases · remote sensing · cartography</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Featured work</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">VPAG QA pipeline</div>
+            <span class="project-tag">Python · R</span>
+          </div>
+          <div class="project-desc">Reproducible analytical pipeline for quality-assuring company submissions underpinning the £15bn NHS medicines rebate scheme. Automated validation reduced post-QA errors to below 2%.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">AI data catalogue</div>
+            <span class="project-tag">HTML · XML · Markdown</span>
+          </div>
+          <div class="project-desc">Creating structured metadata files for a national research data platform at the University of Manchester (NERC DSH), improving discoverability and accessibility of complex datasets.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-name">Geospatial analysis</div>
+            <span class="project-tag">GIS · R</span>
+          </div>
+          <div class="project-desc">Spatial-temporal analysis of traffic accidents (MSc thesis); flood risk mapping; interactive maps for bus network planning. Applied GIS across government and consultancy settings.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Current roles</div>
+      <div class="role-row">
+        <div>
+          <span class="role-title">Operational Researcher</span>
+          <span class="role-org"> · Department of Health and Social Care (DHSC)</span>
+        </div>
+        <div class="role-date">Apr 2024 – present</div>
+      </div>
+      <div class="role-row">
+        <div>
+          <span class="role-title">GIS Data Analyst</span>
+          <span class="role-org"> · University of Manchester (SEED / NERC DSH)</span>
+        </div>
+        <div class="role-date">Nov 2025 – present · part-time</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <div class="contact-row">
+        <a class="contact-item" href="mailto:eriolaib@gmail.com"><div class="dot"></div>eriolaib@gmail.com</a>
+        <span class="contact-item"><div class="dot"></div>London, UK</span>
+        <a class="contact-item" href="https://www.linkedin.com/in/eriola-trungu-impersimi/" target="_blank"><div class="dot"></div>LinkedIn</a>
+        <a class="contact-item" href="https://github.com/eritrouib" target="_blank"><div class="dot"></div>GitHub</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      GORS member · Open to Operational Research opportunities in government
+    </div>
+
+  </div>
+</body>
+</html>
