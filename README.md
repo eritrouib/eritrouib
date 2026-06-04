@@ -1,6 +1,6 @@
 # Eriola Trungu Impersimi
 
-**Senior Operational Researcher · DHSC · GORS Member**  
+**Operational Researcher · DHSC · GORS Member**  
 London, UK · [eriolaib@gmail.com](mailto:eriolaib@gmail.com) · [LinkedIn](https://www.linkedin.com/in/eriola-trungu-impersimi/)
 
 ---
