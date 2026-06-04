@@ -7,7 +7,7 @@ London, UK · [eriolaib@gmail.com](mailto:eriolaib@gmail.com) · [LinkedIn](http
 
 ## About
 
-I'm a Senior Operational Researcher with 10+ years' experience applying quantitative, geospatial and statistical methods to complex policy problems in government. Currently leading analytical QA and forecasting for the £15bn VPAG NHS medicines scheme at DHSC, and contributing to an AI data catalogue at the University of Manchester. Passionate about reproducible analysis, communicating uncertainty clearly, and building analytical capability across teams.
+I'm an Operational Researcher with 10+ years' experience applying quantitative, geospatial and statistical methods to complex policy problems in government. Currently leading analytical QA and forecasting for the £15bn VPAG NHS medicines scheme at DHSC, and contributing to an AI data catalogue at the University of Manchester. Passionate about reproducible analysis, communicating uncertainty clearly, and building analytical capability across teams.
 
 ---
 
