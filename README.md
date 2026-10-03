@@ -38,9 +38,10 @@ Spatial-temporal analysis of traffic accidents (MSc thesis, Athens); flood risk 
 Predicts flight departure delays using a time-based validation design, a credible baseline, automated data quality and leakage checks, SHAP explainability, segment-level bias review and PSI drift monitoring. A model card is regenerated from the results on every run.
 ---
 
-## Current Role
+## Recent Roles
 
-- **Operational Researcher** — Department of Health and Social Care (DHSC), Apr 2024–present
+- **Operational Researcher**, Department of Health and Social Care (DHSC), Apr 2024–present
+- **AI & Geospatial Platform Analyst**, University of Manchester (SEED / NERC DSH), Dec 2025–Sep 2026 *(part-time)*
 
 ---
 
