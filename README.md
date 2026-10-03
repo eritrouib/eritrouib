@@ -33,6 +33,9 @@ Creating structured metadata files for a national research data platform at the 
 ### Geospatial Analysis · `GIS` `R`
 Spatial-temporal analysis of traffic accidents (MSc thesis, Athens); flood risk mapping; interactive maps for bus network planning. Applied GIS across government, research and consultancy settings.
 
+### [Flight Delay Prediction with Responsible ML](https://github.com/eritrouib/flight-delay-prediction) · `Python` `LightGBM` `SHAP`
+
+Predicts flight departure delays using a time-based validation design, a credible baseline, automated data quality and leakage checks, SHAP explainability, segment-level bias review and PSI drift monitoring. A model card is regenerated from the results on every run.
 ---
 
 ## Current Roles
