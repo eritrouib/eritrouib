@@ -1,48 +1,36 @@
 # Eriola Trungu Impersimi
 
-**Operational Researcher · DHSC · GORS Member**  
-London, UK · [eriolaib@gmail.com](mailto:eriolaib@gmail.com) · [LinkedIn](https://www.linkedin.com/in/eriola-trungu-impersimi/)
+**Operational Researcher and geospatial analyst · GORS member**
+London, UK · [Website](https://eritrouib.github.io) · [LinkedIn](https://www.linkedin.com/in/eriola-trungu-impersimi/)
 
 ---
 
-## About
+I'm a Government Operational Researcher and geospatial analyst with 15+ years' experience applying quantitative, geospatial and statistical methods to complex problems across government, academia and the private sector. I enjoy turning messy data into clear, reproducible analysis, communicating uncertainty honestly, and building tools that help people make better decisions. Lately I've been exploring how AI can make spatial analysis faster and more accessible without losing rigour.
 
-I'm an Operational Researcher with 10+ years' experience applying quantitative, geospatial and statistical methods to complex policy problems in government. Currently leading analytical QA and forecasting for the £15bn VPAG NHS medicines scheme at DHSC, and contributing to an AI data catalogue at the University of Manchester. Passionate about reproducible analysis, communicating uncertainty clearly, and building analytical capability across teams.
+## Featured projects
 
----
+**[Pedestrian casualties on London's roads](https://github.com/eritrouib/london-pedestrian-safety)** · `Python` `GeoPandas` `PySAL` `Leaflet`
+22,108 pedestrian casualties in Greater London, 2021–2025: network hotspots, a built-environment model and drive times to trauma care. [Live dashboard](https://eritrouib.github.io/london-pedestrian-safety/)
 
-## Technical Skills
+**[Article 4 and constraints checker, Kingston](https://github.com/eritrouib/Article4Kingston)** · `JavaScript` `Leaflet` `Planning Data API`
+A Local Land Charges aid: checks one property or a whole CSV against Article 4 directions, conservation areas, listed buildings, flood zones and more, flagging borderline cases near boundaries. [Open the checker](https://eritrouib.github.io/Article4Kingston/)
 
-| Area | Tools & Methods |
+**Interactive calculators** · `JavaScript`
+[Lifestyle and life expectancy](https://eritrouib.github.io/life-calculator/) · [The cost of a coffee habit](https://eritrouib.github.io/coffee-cost-calculator/)
+
+## Skills
+
+| Area | Tools and methods |
 |---|---|
-| **Analytical methods** | Forecasting, regression, statistical QA, sensitivity analysis, NLP, stock-and-flow modelling |
-| **Programming** | Python, R, SQL, R Markdown |
-| **Data & tools** | RAP, GitHub, GitLab, TortoiseGit, Azure, Agile/Scrum |
-| **Geospatial** | ArcGIS, QGIS, geodatabases, remote sensing, cartography |
+| **Analytical methods** | Forecasting, regression and count models, spatial statistics, statistical QA, sensitivity analysis |
+| **Programming** | Python, R, SQL, R Markdown, Quarto |
+| **Geospatial** | ArcGIS Pro, QGIS, GeoPandas, OSMnx, PySAL, network analysis, web mapping (Leaflet) |
+| **Ways of working** | Reproducible analytical pipelines (RAP), Git and GitHub, Agile |
+
+## Background
+
+Operational research in UK government, including the Department of Health and Social Care · geospatial data work for the NERC-funded Nature-based Solutions Decision Support Hub at the University of Manchester · MSc Geoinformatics, National Technical University of Athens.
 
 ---
 
-## Featured Work
-
-### VPAG QA Pipeline · `Python` `R`
-Reproducible analytical pipeline for quality-assuring company submissions underpinning the £15bn NHS medicines rebate scheme. Automated validation checks reduced post-QA errors to below 2% and enabled faster, more reliable reporting cycles.
-
-### AI Data Catalogue · `HTML` `XML` `Markdown`
-Creating structured metadata files for a national research data platform at the University of Manchester (NERC DSH), improving discoverability and accessibility of complex datasets for the backend platform.
-
-### Geospatial Analysis · `GIS` `R`
-Spatial-temporal analysis of traffic accidents (MSc thesis, Athens); flood risk mapping; interactive maps for bus network planning. Applied GIS across government, research and consultancy settings.
-
-### [Flight Delay Prediction with Responsible ML](https://github.com/eritrouib/flight-delay-prediction) · `Python` `LightGBM` `SHAP`
-
-Predicts flight departure delays using a time-based validation design, a credible baseline, automated data quality and leakage checks, SHAP explainability, segment-level bias review and PSI drift monitoring. A model card is regenerated from the results on every run.
----
-
-## Recent Roles
-
-- **Operational Researcher**, Department of Health and Social Care (DHSC), Apr 2024–present
-- **AI & Geospatial Platform Analyst**, University of Manchester (SEED / NERC DSH), Dec 2025–Sep 2026 *(part-time)*
-
----
-
-*GORS member · Open to Operational Research opportunities in government*
+*Writing at [eritrouib.github.io](https://eritrouib.github.io) · Open to geospatial and analytical roles*
